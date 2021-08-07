@@ -18,6 +18,9 @@
     font-size: 1.2rem; }
   * body ul {
     margin: 0; }
+  * body a {
+    text-decoration: none;
+    color: currentColor; }
 
 /* NAVBAR */
 .header {
@@ -64,7 +67,7 @@ footer {
   height: fit-content;
   background-color: #E1EFDE; }
   footer div {
-    color: #69af5c;
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -74,11 +77,36 @@ footer {
     footer div img {
       height: 2.5rem;
       width: 2.5rem;
-      margin: 2rem 0rem; }
+      margin: 2rem 0rem;
+      color: #69af5c; }
 
 /* SECCIONES */
 section {
   height: fit-content; }
+
+.section__title {
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  width: 80%;
+  padding: 0.5rem;
+  margin: 0 auto;
+  margin-top: 1rem; }
+
+.section__title#about {
+  background-color: #9a74a2; }
+
+.section__title#consultas {
+  background-color: #fab95b; }
+
+.section__title#talleres {
+  background-color: #ee8886; }
+
+.section__title#archivos {
+  background-color: #dccb73; }
+
+.section__title#contacto {
+  background-color: #afd0a0; }
 
 /* INICIO */
 @media (max-width: 952px) {
@@ -115,8 +143,8 @@ section {
     height: 525px; }
     @media (max-width: 952px) {
       .about .about_card {
-        margin-right: 1rem;
-        height: fit-content; } }
+        height: fit-content;
+        width: 100%; } }
     .about .about_card .about_card--title {
       color: #9a74a2;
       padding: 1rem;
@@ -223,3 +251,35 @@ section {
 
 /* ARCHIVOS */
 /* CONTACTO */
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content; }
+  @media (max-width: 952px) {
+    .contacto {
+      justify-content: center; } }
+  @media (min-width: 952px) {
+    .contacto {
+      justify-content: space-between; } }
+  .contacto .contacto__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #afd0a0;
+    border-radius: 15px;
+    margin: 1rem 0.6rem;
+    padding: 1.5rem 2rem; }
+    @media (min-width: 952px) {
+      .contacto .contacto__card {
+        width: 46%; } }
+    @media (max-width: 952px) {
+      .contacto .contacto__card {
+        width: 100%; } }
+    .contacto .contacto__card .contacto__card--text {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      margin: 0.5rem 0rem; }
+      .contacto .contacto__card .contacto__card--text a {
+        font-size: 2rem;
+        margin-left: 0.75rem; }
