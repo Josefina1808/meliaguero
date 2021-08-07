@@ -12,13 +12,27 @@
     <script src="https://kit.fontawesome.com/5e95e0424d.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scroll no mover - debe ir en el head -->
+    <script src="js/scroll.min.js"></script>
+    <script>
+      smoothScroll.init({
+      selector: '[data-scroll]', 
+      selectorHeader: null, 
+      speed: 800, // duracion del efecto
+      easing: 'easeInOutCubic', 
+      offset: 0, 
+      callback: function ( anchor, toggle ) {} 
+      });
+    </script>
+
     <title>Melina Agüero</title>
 </head>
 
 <body>
     <header>
       <div class="header">
-        <div class="nav-logo">MA</div>
+        <div class="nav-logo">🥝 MA Nutrición</div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,29 +43,29 @@
                 <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#inicio">INICIO</a>
+                            <a data-scroll href="#sec-1" class="nav-link" aria-current="page" href="#">INICIO</a> <!--inicio-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#sobre-mi">SOBRE MI</a>
+                            <a data-scroll href="#sec-2" class="nav-link" aria-current="page" href="#">SOBRE MI</a> <!--sobre-mi-->
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#consultas" id="navbarDropdownMenuLink"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 CONSULTAS
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#modalidades">Modalidades</a></li>
-                                <li><a class="dropdown-item" href="#faq">Preguntas frecuentes</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                                <li><a data-scroll href="#sec-3" class="dropdown-item" href="#">Modalidades</a></li> <!--modalidades-->
+                                <li><a data-scroll href="#sec-4" class="dropdown-item" href="#">Preguntas frecuentes</a></li> <!--faq-->
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#talleres">TALLERES</a>
+                            <a data-scroll href="#sec-5" class="nav-link" href="#">TALLERES</a> <!--talleres-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#archivos">ARCHIVOS</a>
+                            <a data-scroll href="#sec-6" class="nav-link" href="#">ARCHIVOS</a> <!--archivos-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                            <a data-scroll href="#sec-7" class="nav-link" href="#">CONTACTO</a> <!--contacto-->
                         </li>
 
                     </ul>
@@ -62,18 +76,19 @@
         
     </header>
     <!-- Sección inicio va afuera de main para que ocupe el 100% de width -->
-    <section id="inicio">
+    <section id="sec-1">
       <div id="carousel-index" class="home carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             
-            <div class="carousel-item active">
-                <img src="img/bg/bg-home.jpg" class="d-block w-100">
+            <div class="container">
+                <img src="img/bg/bg-home.jpg" class="w-100">
+                <hr>
             </div>
         </div>
     </div>
     </section>
     <main class="container">
-        <section id="sobre-mi">
+        <section id="sec-2">
             <div class="about container-fluid">
                 <!-- div que engloba las 4 card -->
                 <!-- div de cada card-->
@@ -146,7 +161,7 @@
             </div>
         </section>
         <section id="consultas">
-            <article id="modalidades">
+            <article id="sec-3">
                 <div class="modalidades">
                     <div class="modalidad_card">
                         <div class="modalidad_card--title">
@@ -180,7 +195,7 @@
                     </div>
                 </div>
             </article>
-            <article id="faq">
+            <article id="sec-4">
                 <div class="faq">
                     <div class="faq_title">
                         <h3>Preguntas Frecuentes</h3>
