@@ -72,8 +72,9 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    margin: 0 auto; }
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; }
     footer div img {
       height: 2.5rem;
       width: 2.5rem;
@@ -384,5 +385,10 @@ section {
       font-size: 2rem;
       margin: 0.5rem 0rem; }
       .contacto .contacto__card .contacto__card--text a {
-        font-size: 1.8rem;
         margin-left: 0.75rem; }
+        @media (min-width: 952px) {
+          .contacto .contacto__card .contacto__card--text a {
+            font-size: 1.8rem; } }
+        @media (max-width: 952px) {
+          .contacto .contacto__card .contacto__card--text a {
+            font-size: 1.3rem; } }
