@@ -267,7 +267,8 @@ section {
     background-color: #afd0a0;
     border-radius: 15px;
     margin: 1rem 0.6rem;
-    padding: 1.5rem 2rem; }
+    padding: 1.5rem 2rem;
+    justify-content: center; }
     @media (min-width: 952px) {
       .contacto .contacto__card {
         width: 46%; } }
@@ -281,5 +282,5 @@ section {
       font-size: 2rem;
       margin: 0.5rem 0rem; }
       .contacto .contacto__card .contacto__card--text a {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-left: 0.75rem; }

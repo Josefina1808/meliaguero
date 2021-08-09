@@ -2,406 +2,468 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
-    <!-- LIBRERÍAS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/5e95e0424d.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <!-- LIBRERÍAS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/5e95e0424d.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Scroll no mover - debe ir en el head -->
-    <script src="js/scroll.min.js"></script>
-    <script>
-      smoothScroll.init({
-      selector: '[data-scroll]', 
-      selectorHeader: null, 
+  <!-- Scroll no mover - debe ir en el head -->
+  <script src="js/scroll.min.js"></script>
+  <script>
+    smoothScroll.init({
+      selector: '[data-scroll]',
+      selectorHeader: null,
       speed: 800, // duracion del efecto
-      easing: 'easeInOutCubic', 
-      offset: 0, 
-      callback: function ( anchor, toggle ) {} 
-      });
-    </script>
+      easing: 'easeInOutCubic',
+      offset: 0,
+      callback: function (anchor, toggle) {}
+    });
+  </script>
 
-    <title>Melina Agüero</title>
+  <title>Melina Agüero</title>
 </head>
 
 <body>
-    <header>
-      <div class="header">
-        <div class="nav-logo">MA Nutrición</div>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars 3x"></i></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a data-scroll href="#sec-1" class="nav-link" aria-current="page" href="#">INICIO</a> <!--inicio-->
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll href="#sec-2" class="nav-link" aria-current="page" href="#">SOBRE MI</a> <!--sobre-mi-->
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#consultas" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                CONSULTAS
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                                <li><a data-scroll href="#sec-3" class="dropdown-item" href="#">Modalidades</a></li> <!--modalidades-->
-                                <li><a data-scroll href="#sec-4" class="dropdown-item" href="#">Preguntas frecuentes</a></li> <!--faq-->
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll href="#sec-5" class="nav-link" href="#">TALLERES</a> <!--talleres-->
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll href="#sec-6" class="nav-link" href="#">ARCHIVOS</a> <!--archivos-->
-                        </li>
-                        <li class="nav-item">
-                            <a data-scroll href="#sec-7" class="nav-link" href="#">CONTACTO</a> <!--contacto-->
-                        </li>
+  <header>
+    <div class="header">
+      <div class="nav-logo">MA Nutrición</div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars 3x"></i></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a data-scroll href="#sec-1" class="nav-link" aria-current="page" href="#">INICIO</a>
+                <!--inicio-->
+              </li>
+              <li class="nav-item">
+                <a data-scroll href="#sec-2" class="nav-link" aria-current="page" href="#">SOBRE MI</a>
+                <!--sobre-mi-->
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#consultas" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  CONSULTAS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a data-scroll href="#sec-3" class="dropdown-item" href="#">Modalidades</a></li>
+                  <!--modalidades-->
+                  <li><a data-scroll href="#sec-4" class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                  <!--faq-->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a data-scroll href="#sec-5" class="nav-link" href="#">TALLERES</a>
+                <!--talleres-->
+              </li>
+              <li class="nav-item">
+                <a data-scroll href="#sec-6" class="nav-link" href="#">ARCHIVOS</a>
+                <!--archivos-->
+              </li>
+              <li class="nav-item">
+                <a data-scroll href="#sec-7" class="nav-link" href="#">CONTACTO</a>
+                <!--contacto-->
+              </li>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-      </div>
-        
-    </header>
-    <!-- Sección inicio va afuera de main para que ocupe el 100% de width -->
-    <section id="sec-1">
-      <div id="carousel-index" class="home carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            
-            <div class="container">
-                <img src="img/bg/bg-home.jpg" class="w-100">
-                <hr style="color: transparent;">
-            </div>
+            </ul>
+          </div>
         </div>
+      </nav>
     </div>
+
+  </header>
+  <!-- Sección inicio va afuera de main para que ocupe el 100% de width -->
+  <section id="sec-1">
+    <div id="carousel-index" class="home carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="container">
+          <img src="img/bg/bg-home.jpg" class="w-100">
+          <hr style="color: transparent;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="container">
+    <section id="sec-2">
+      <div class="section__title" id=about>
+        <h2>SOBRE MÍ</h2>
+      </div>
+      <!-- div que engloba las 4 card -->
+      <div class="about container-fluid">
+        <!-- div de cada card-->
+        <div class="about_card">
+          <div class="about_card--title">
+            <h3>¿Quién soy?</h3>
+          </div>
+          <div class="about_card--text">
+            <p>Hola! Soy Melina Agüera, tengo 27 años. </p>
+            <p>Me recibí en Nutrición en el año 2018, en el Instutito Universitoria CEMIC.</p>
+            <p>Mi misión es ayudarte a mejorar tu calidad de vida a través del cambio de hábitos, con ideas
+              de comidas fáciles para que incorpores en tu día a día. </p>
+            <p>Juntos podemos empezar a trabajar la incorporación de hábitos saludables y aprender a darle
+              valor y amor a nuestro cuerpo</p>
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about_card--title">
+            <h3>¿Cómo trabajo?</h3>
+          </div>
+          <div class="about_card--text">
+            <p>Brindo información, herramientas y asesoramiento, salud y nutrición para que puedas cumplir
+              tus objetivos y goces de una salud óptima.</p>
+            <p>Trabajo con:</p>
+            <ul>
+              <li>Educación alimentaria y nutriciona</li>
+              <li>Abordaje integral consciente y holístico</li>
+              <li>Planes personalizados adecuados a tus gustos, hábitos y estilo de vida. </li>
+              <li>Seguimiento personalizado de acuerdo a tus necesidades.</li>
+              <li>Consultas online y presencial</li>
+              <li>Todas las edades</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about_card--title">
+            <h3>¿En qué me especializo?</h3>
+          </div>
+          <div class="about_card--text">
+            <p>Me especializo en:</p>
+            <ul>
+              <li>Tratamientos del sobrepeso y la obesidad
+              </li>
+              <li>Educación alimentaria y nutricional</li>
+              <li>Atención de patologías cardiovasculares, HTA, Dislipemia, diabetes tipo 2
+              </li>
+              <li>Alimentación omnívora, vegetariana, vegana o plant based</li>
+              <li>Aumento , descenso o mantenimiento de peso</li>
+              <li>Alimentación en deporte
+              </li>
+            </ul>
+            <p>Consultar por otras patologías.</p>
+          </div>
+        </div>
+        <div class="about_card">
+          <div class="about_card--title">
+            <h3>Mis títulos</h3>
+          </div>
+          <div class="about_card--text">
+            <ul>
+              <li>Licenciada en Nutrición MN y MP</li>
+              <li>Posgrado en tratamiento del sobrepeso y la obesidad</li>
+              <li>Marketing personal y de la salud</li>
+              <li>Herramientas digitales</li>
+            </ul>
+            <img src="img/meli.svg" alt="">
+          </div>
+        </div>
+      </div>
     </section>
-    <main class="container">
-        <section id="sec-2">
-          <div class="section__title" id=about><h2>SOBRE MÍ</h2></div>
-          <!-- div que engloba las 4 card -->
-            <div class="about container-fluid">
-                <!-- div de cada card-->
-                <div class="about_card">
-                    <div class="about_card--title">
-                        <h3>¿Quién soy?</h3>
-                    </div>
-                    <div class="about_card--text">
-                        <p>Hola! Soy Melina Agüera, tengo 27 años. </p>
-                        <p>Me recibí en Nutrición en el año 2018, en el Instutito Universitoria CEMIC.</p>
-                        <p>Mi misión es ayudarte a mejorar tu calidad de vida a través del cambio de hábitos, con ideas
-                            de comidas fáciles para que incorpores en tu día a día. </p>
-                        <p>Juntos podemos empezar a trabajar la incorporación de hábitos saludables y aprender a darle
-                            valor y amor a nuestro cuerpo</p>
-                    </div>
-                </div>
-                <div class="about_card">
-                    <div class="about_card--title">
-                        <h3>¿Cómo trabajo?</h3>
-                    </div>
-                    <div class="about_card--text">
-                        <p>Brindo información, herramientas y asesoramiento, salud y nutrición para que puedas cumplir
-                            tus objetivos y goces de una salud óptima.</p>
-                        <p>Trabajo con:</p>
-                        <ul>
-                            <li>Educación alimentaria y nutriciona</li>
-                            <li>Abordaje integral consciente y holístico</li>
-                            <li>Planes personalizados adecuados a tus gustos, hábitos y estilo de vida. </li>
-                            <li>Seguimiento personalizado de acuerdo a tus necesidades.</li>
-                            <li>Consultas online y presencial</li>
-                            <li>Todas las edades</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about_card">
-                    <div class="about_card--title">
-                        <h3>¿En qué me especializo?</h3>
-                    </div>
-                    <div class="about_card--text">
-                        <p>Me especializo en:</p>
-                        <ul>
-                            <li>Tratamientos del sobrepeso y la obesidad
-                            </li>
-                            <li>Educación alimentaria y nutricional</li>
-                            <li>Atención de patologías cardiovasculares, HTA, Dislipemia, diabetes tipo 2
-                            </li>
-                            <li>Alimentación omnívora, vegetariana, vegana o plant based</li>
-                            <li>Aumento , descenso o mantenimiento de peso</li>
-                            <li>Alimentación en deporte
-                            </li>
-                        </ul>
-                        <p>Consultar por otras patologías.</p>
-                    </div>
-                </div>
-                <div class="about_card">
-                    <div class="about_card--title">
-                        <h3>Mis títulos</h3>
-                    </div>
-                    <div class="about_card--text">
-                        <ul>
-                            <li>Licenciada en Nutrición MN y MP</li>
-                            <li>Posgrado en tratamiento del sobrepeso y la obesidad</li>
-                            <li>Marketing personal y de la salud</li>
-                            <li>Herramientas digitales</li>
-                        </ul>
-                        <img src="img/meli.svg" alt="">
-                    </div>
-                </div>
+    <section id="consultas">
+      <article id="sec-3">
+        <div class="modalidades">
+          <div class="section__title" id="consultas">
+            <h2>CONSULTAS</h2>
+          </div>
+          <div class="modalidad_card">
+            <div class="modalidad_card--title">
+              <h3>Online</h3>
             </div>
-        </section>
-        <section id="consultas">
-            <article id="sec-3">
-                <div class="modalidades">
-                  <div class="section__title" id="consultas"><h2>CONSULTAS</h2></div>
-                    <div class="modalidad_card">
-                        <div class="modalidad_card--title">
-                            <h3>Online</h3>
-                        </div>
-                        <div class="modalidad_card--text">
-                            <ul>
-                                <li>Consultas vía WhatsApp/zoom/meet.</li>
-                                <li>Duración: 30 minutos</li>
-                                <li>Se puede abonar por transferencia bancaria o mercado pago</li>
-                                <li>El turno se reserva previo a ser abonado y enviado el comprobante. Caso contrario el turno se cancela y llegada la fecha no se realiza la consulta. </li>
-                                <li>En el caso que necesite suspender la consulta deberá realizarlo hasta 24 horas antes para que se le haga la devolución del dinero.</li>
-                                <li>Todo el material trabajado durante las sesiones será enviado por mail o WhatsApp.</li>
-                                <li>Reserva de turnos por mensaje de WhatsApp o enviar un correo.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="modalidad_card">
-                        <div class="modalidad_card--title">
-                            <h3>Presencial</h3>
-                        </div>
-                        <div class="modalidad_card--text">
-                            <ul>
-                                <li>Consultorio en Vicente López</li>
-                                <li>Duración: 30 minutos</li>
-                                <li>Se puede abonar por transferencia bancaria, efectivo o mercado pago</li>
-                                <li>Todo el material trabajado durante las sesiones será enviado por mail o WhatsApp.</li>
-                                <li>Reserva de turnos por mensaje de WhatsApp o enviar un correo.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article id="sec-4">
-                <div class="faq">
-                    <div class="faq_title">
-                        <h3>Preguntas Frecuentes</h3>
-                    </div>
-                    <div class="accordion accordion-flush" id="faq_accordion">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Si tengo una patología que no figura en la descripción, ¿Qué hago?
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Podes enviarme un mail a Lic.nutrimaguero@gmail.com o un mensaje al 116548-8335.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                ¿Cómo se abonan las consultas?
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Se pueden abona con mercado pago , transferencia bancaria, o efectivo</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                ¿Dónde tenés el consultorio?
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Atiendo de forma presencial en Florida, Vincete Lopez.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                ¿Si soy de otra provincia, puedo atenderme? 
-                            </button>
-                          </h2>
-                          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Si, podés atenderte a través de consultas online. </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingFive">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                ¿Trabajas con obras sociales? 
-                            </button>
-                          </h2>
-                          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Por el momento no. Solo particular, pero ofrezco facturas para reintegro.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingSix">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                ¿Cuánto duran las consultas?
-                            </button>
-                          </h2>
-                          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Las consultas duran 30 minutos, por lo general las primeras dos suelen prolongarse hasta 45 minutos aprox.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingSeven">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                ¿Ofreces asesorías a emprendimiento o empresas de viandas y comidas?  
-                            </button>
-                          </h2>
-                          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Si, ofrezco el servicio de asesoramiento y desarrollo de rotulado nutricional de alimentos o productos.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingEight">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                ¿Puede ser la dieta para toda mi familia? 
-                            </button>
-                          </h2>
-                          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">No, ya que las recomendaciones de nutrientes y cantidades de alimentos van a variar según cada persona.<br>
-                                Cada plan de alimentación es personalizado y adaptado a gustos, hábitos y estilo de vida. 
-                                </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingNine">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                                Para cumplir con este plan de alimentación, ¿debo comprar alimentos más caros o en lugares específicos?  
-                            </button>
-                          </h2>
-                          <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">No, siempre vamos a trabajar en conjunto adaptando las comidas a tu estilo de vida. No hace falta comprar alimentos caros para alimentarse de manera saludable. </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingTen">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                                ¿Cuánto tiempo duran los tratamientos?  
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">La duración del tratamiento va a depender de la constancia y dedicación de cada persona. No hay tiempos preestablecidos.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingEleven">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                                ¿Con qué frecuencia debo tener las consultas? 
-                            </button>
-                          </h2>
-                          <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">La frecuencia de las consultas se pacta con cada persona teniendo en cuenta los objetivos que desee alcanzar.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingTwelve">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
-                                Si luego de la consulta me surge una duda , ¿Qué puedo hacer?  
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Podés enviar un mail o un mensaje de WhatsApp (de 10 a 18 horas., de lunes a viernes) con la consulta o sino anotarla y comentarla en el próximo encuentro, ya sea online o presencial.</div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingThirdteen">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirdteen" aria-expanded="false" aria-controls="flush-collapseThirdteen">
-                                ¿Puedo alternar las consultas entre presenciales y virtuales?  
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThirdteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirdteen" data-bs-parent="#faq_accordion">
-                            <div class="accordion-body">Sí, podes elegir la modalidad que prefieras.</div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </article>
-        </section>
-        
-        <section id="talleres">
-          <div class="section__title" id="talleres"><h2>TALLERES</h2></div>
-            <div>
-              
+            <div class="modalidad_card--text">
+              <ul>
+                <li>Consultas vía WhatsApp/zoom/meet.</li>
+                <li>Duración: 30 minutos</li>
+                <li>Se puede abonar por transferencia bancaria o mercado pago</li>
+                <li>El turno se reserva previo a ser abonado y enviado el comprobante. Caso contrario el turno se
+                  cancela y llegada la fecha no se realiza la consulta. </li>
+                <li>En el caso que necesite suspender la consulta deberá realizarlo hasta 24 horas antes para que se le
+                  haga la devolución del dinero.</li>
+                <li>Todo el material trabajado durante las sesiones será enviado por mail o WhatsApp.</li>
+                <li>Reserva de turnos por mensaje de WhatsApp o enviar un correo.</li>
+              </ul>
             </div>
-        </section>
-        <section id="archivos">
-          <div class="section__title" id="archivos"><h2>ARCHIVOS</h2></div>
-            <div></div>
-        </section>
-        <section id="contacto">
-          <div class="section__title" id="contacto"><h2>CONTACTO</h2></div>
-            <div class="contacto">
-              <div class=""></div>
-              <div class="contacto__card">
-                <div class="contacto__card--text">
-                  <i class="fab fa-whatsapp 3x"></i>
-                  <a href="">+549 116548-8335</a>
-                </div>
-                <div class="contacto__card--text">
-                  <i class="fab fa-instagram 3x"></i>
-                  <a href="">@nutri.maguero</a>
-                </div>
-                <div class="contacto__card--text">
-                  <i class="fab fa-linkedin-in 3x"></i>
-                  <a href="">Melina Agüero</a>
-                  
-                </div>
-                <div class="contacto__card--text">
-                  <i class="fab fa-facebook-f 3x"></i>
-                  <a href="">nutri.maguero</a>
-                </div>
-                <div class="contacto__card--text">
-                  <i class="far fa-envelope 3x"></i>
-                  <a href="">lic.nutrimaguero@gmail.com</a>
+          </div>
+          <div class="modalidad_card">
+            <div class="modalidad_card--title">
+              <h3>Presencial</h3>
+            </div>
+            <div class="modalidad_card--text">
+              <ul>
+                <li>Consultorio en Vicente López</li>
+                <li>Duración: 30 minutos</li>
+                <li>Se puede abonar por transferencia bancaria, efectivo o mercado pago</li>
+                <li>Todo el material trabajado durante las sesiones será enviado por mail o WhatsApp.</li>
+                <li>Reserva de turnos por mensaje de WhatsApp o enviar un correo.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="sec-4">
+        <div class="faq">
+          <div class="faq_title">
+            <h3>Preguntas Frecuentes</h3>
+          </div>
+          <div class="accordion accordion-flush" id="faq_accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Si tengo una patología que no figura en la descripción, ¿Qué hago?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Podes enviarme un mail a Lic.nutrimaguero@gmail.com o un mensaje al
+                  116548-8335.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  ¿Cómo se abonan las consultas?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Se pueden abona con mercado pago , transferencia bancaria, o efectivo</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  ¿Dónde tenés el consultorio?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Atiendo de forma presencial en Florida, Vincete Lopez.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  ¿Si soy de otra provincia, puedo atenderme?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Si, podés atenderte a través de consultas online. </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  ¿Trabajas con obras sociales?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Por el momento no. Solo particular, pero ofrezco facturas para reintegro.
                 </div>
               </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <img src="img/redes/whatsapp-brands.svg" alt="">
-            <img src="img/redes/map-marker-alt-solid.svg" alt="">
-            <img src="img/redes/facebook-brands.svg" alt="">
-            <img src="img/redes/instagram-brands.svg" alt="">
-            <img src="img/redes/envelope-regular.svg" alt="">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  ¿Cuánto duran las consultas?
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Las consultas duran 30 minutos, por lo general las primeras dos suelen
+                  prolongarse hasta 45 minutos aprox.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                  ¿Ofreces asesorías a emprendimiento o empresas de viandas y comidas?
+                </button>
+              </h2>
+              <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Si, ofrezco el servicio de asesoramiento y desarrollo de rotulado
+                  nutricional de alimentos o productos.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                  ¿Puede ser la dieta para toda mi familia?
+                </button>
+              </h2>
+              <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">No, ya que las recomendaciones de nutrientes y cantidades de alimentos van a
+                  variar según cada persona.<br>
+                  Cada plan de alimentación es personalizado y adaptado a gustos, hábitos y estilo de vida.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                  Para cumplir con este plan de alimentación, ¿debo comprar alimentos más caros o en lugares
+                  específicos?
+                </button>
+              </h2>
+              <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">No, siempre vamos a trabajar en conjunto adaptando las comidas a tu estilo
+                  de vida. No hace falta comprar alimentos caros para alimentarse de manera saludable. </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                  ¿Cuánto tiempo duran los tratamientos?
+                </button>
+              </h2>
+              <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">La duración del tratamiento va a depender de la constancia y dedicación de
+                  cada persona. No hay tiempos preestablecidos.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                  ¿Con qué frecuencia debo tener las consultas?
+                </button>
+              </h2>
+              <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">La frecuencia de las consultas se pacta con cada persona teniendo en cuenta
+                  los objetivos que desee alcanzar.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                  Si luego de la consulta me surge una duda , ¿Qué puedo hacer?
+                </button>
+              </h2>
+              <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve"
+                data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Podés enviar un mail o un mensaje de WhatsApp (de 10 a 18 horas., de lunes a
+                  viernes) con la consulta o sino anotarla y comentarla en el próximo encuentro, ya sea online o
+                  presencial.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThirdteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThirdteen" aria-expanded="false"
+                  aria-controls="flush-collapseThirdteen">
+                  ¿Puedo alternar las consultas entre presenciales y virtuales?
+                </button>
+              </h2>
+              <div id="flush-collapseThirdteen" class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThirdteen" data-bs-parent="#faq_accordion">
+                <div class="accordion-body">Sí, podes elegir la modalidad que prefieras.</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-            <p>Lic. Melina Agüero - M.N: 9916 M.P: 5121</p>
+      </article>
+    </section>
+
+    <section id="talleres">
+      <div class="section__title" id="talleres">
+        <h2>TALLERES</h2>
+      </div>
+      <div>
+
+      </div>
+    </section>
+    <section id="archivos">
+      <div class="section__title" id="archivos">
+        <h2>ARCHIVOS</h2>
+      </div>
+      <div></div>
+    </section>
+    <section id="contacto">
+      <div class="section__title" id="contacto">
+        <h2>CONTACTO</h2>
+      </div>
+      <div class="contacto">
+        <div class="contacto__card">
+          <div class="contacto__card--text">
+            <i class="fas fa-map-marker-alt"></i>
+            <a target="blanck" href="https://www.google.com/maps/place/Nutricionista+Melina+Ag%C3%BCero/@-34.5366892,-58.5116453,15z/data=!4m5!3m4!1s0x0:0x5f9d85d797bb8324!8m2!3d-34.536719!4d-58.5116238">Arenales 3788, florida, Vicente lópez</a>
+          </div>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13146.663990216557!2d-58.5116453!3d-34.5366892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5f9d85d797bb8324!2sNutricionista%20Melina%20Ag%C3%BCero!5e0!3m2!1sen!2sar!4v1628474161909!5m2!1sen!2sar" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </div>
-    </footer>
+        <div class="contacto__card">
+          <div class="contacto__card--text">
+            <i class="fab fa-whatsapp 3x"></i>
+            <a href="https://wa.me/5491165488335?" target="blanck">+549 116548-8335</a>
+          </div>
+          <div class="contacto__card--text">
+            <i class="fab fa-instagram 3x"></i>
+            <a href="https://www.instagram.com/nutri.maguero/" target="blanck">@nutri.maguero</a>
+          </div>
+          <div class="contacto__card--text">
+            <i class="fab fa-linkedin-in 3x"></i>
+            <a href="https://www.linkedin.com/in/melina-ag%C3%BCero/" target="blanck">Melina Agüero</a>
+          </div>
+          <div class="contacto__card--text">
+            <i class="fab fa-facebook-f 3x"></i>
+            <a href="https://www.facebook.com/nutrimaguero-100154588140059" target="blanck">nutri.maguero</a>
+          </div>
+          <div class="contacto__card--text">
+            <i class="far fa-envelope 3x"></i>
+            <a href="mailto:lic.nutrimaguero@gmail.com" target="blanck">lic.nutrimaguero@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="https://wa.me/5491165488335?" target="blanck"><img src="img/redes/whatsapp-brands.svg" alt=""></a>
+      <a href="https://www.google.com/maps/place/Nutricionista+Melina+Ag%C3%BCero/@-34.5366892,-58.5116453,15z/data=!4m5!3m4!1s0x0:0x5f9d85d797bb8324!8m2!3d-34.536719!4d-58.5116238" target="blanck"><img src="img/redes/map-marker-alt-solid.svg" alt=""></a>
+      <a href="https://www.facebook.com/nutrimaguero-100154588140059" target="blanck"><img src="img/redes/facebook-brands.svg" alt=""></a>
+      <a href="https://www.instagram.com/nutri.maguero/" target="blanck"><img src="img/redes/instagram-brands.svg" alt=""></a>
+      <a href="mailto:lic.nutrimaguero@gmail.com" target="blanck"><img src="img/redes/envelope-regular.svg" alt=""></a>
+    </div>
+    <div>
+      <p>Lic. Melina Agüero - M.N: 9916 M.P: 5121</p>
+    </div>
+  </footer>
 
 
-    <!-- Scripts -->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
+  <!-- Scripts -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
