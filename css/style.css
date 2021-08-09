@@ -67,7 +67,7 @@ footer {
   height: fit-content;
   background-color: #E1EFDE; }
   footer div {
-    color: black;
+    color: #69af5c;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
