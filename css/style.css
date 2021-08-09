@@ -83,8 +83,15 @@ footer {
 /* SECCIONES */
 section {
   height: fit-content;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  padding: 0.5rem 0rem 0.5rem 0rem; }
+  @media (max-width: 952px) {
+    section {
+      background-size: contain;
+      background-repeat: repeat; } }
+  @media (min-width: 952px) {
+    section {
+      background-size: cover;
+      background-repeat: no-repeat; } }
 
 .section__title {
   color: white;
@@ -113,16 +120,16 @@ section {
 #sec-2 {
   background-image: url(../img/bg/bg-about.jpg); }
 
-#sec-3 {
+#section_consultas {
   background-image: url(../img/bg/bg-consultas.jpg); }
 
-#sec-4 {
+#sec-5 {
   background-image: url(../img/bg/bg-talleres.jpg); }
 
-#sec-5 {
+#sec-6 {
   background-image: url(../img/bg/bg-archivos.jpg); }
 
-#sec-6 {
+#sec-7 {
   background-image: url(../img/bg/bg-contacto.jpg); }
 
 /* INICIO */
@@ -140,7 +147,6 @@ section {
 
 /* SOBRE MI */
 .about {
-  background-color: white;
   display: flex;
   flex-wrap: wrap; }
   @media (max-width: 952px) {
@@ -182,7 +188,7 @@ section {
         text-align: justify;
         font-size: 1rem; }
 
-/* TALLERES */
+/* CONSULTAS */
 .modalidades {
   display: flex;
   flex-wrap: wrap;
@@ -265,7 +271,87 @@ section {
       background-color: #fab85b49;
       box-shadow: inset 0 -1px 0 #fab85b49; }
 
+/* TALLERES */
+.talleres {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 952px) {
+    .talleres {
+      justify-content: center; } }
+  @media (min-width: 952px) {
+    .talleres {
+      justify-content: space-between; } }
+  .talleres .talleres__card {
+    display: flex;
+    flex-direction: column;
+    border: solid #ee8886 4px;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+    width: 292px;
+    height: 437px;
+    background-color: white; }
+    .talleres .talleres__card .talleres__card--img {
+      overflow: hidden;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 80%; }
+    .talleres .talleres__card .talleres__card--img#taller-1 {
+      background-image: url(../img/taller-1.jpg); }
+    .talleres .talleres__card .talleres__card--img#taller-2 {
+      background-image: url(../img/taller-2.png); }
+    .talleres .talleres__card .talleres__card--img#taller-3 {
+      background-image: url(../img/taller-3.png); }
+    .talleres .talleres__card .talleres__card--link {
+      color: #ee8886;
+      padding: 1rem;
+      background-color: white;
+      border-top: 4px solid #ee8886;
+      border-radius: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem; }
+
 /* ARCHIVOS */
+.archivos {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 952px) {
+    .archivos {
+      justify-content: center; } }
+  @media (min-width: 952px) {
+    .archivos {
+      justify-content: space-between; } }
+  .archivos .archivos__card {
+    display: flex;
+    flex-direction: column;
+    border: solid #dccb73 4px;
+    border-radius: 15px;
+    margin: 1rem 0rem;
+    width: 292px;
+    height: 437px;
+    background-color: #dccb73; }
+    .archivos .archivos__card .archivos__card--text {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 85%;
+      font-size: 1.8rem;
+      color: white; }
+      .archivos .archivos__card .archivos__card--text p {
+        font-size: 1.8rem;
+        text-align: center; }
+    .archivos .archivos__card .archivos__card--link {
+      color: #dccb73;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem; }
+
 /* CONTACTO */
 .contacto {
   display: flex;
