@@ -50,10 +50,37 @@
     padding: 0; }
   .header .navbar-nav .nav-item .nav-link {
     color: black;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    padding-bottom: 0; }
     @media (min-width: 992px) {
       .header .navbar-nav .nav-item .nav-link {
         margin: 0rem 2rem; } }
+  @media (min-width: 992px) {
+    .header .navbar-nav .circles::after {
+      content: " ";
+      width: 0.75rem;
+      height: 10px;
+      border-radius: 20rem;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 0.25rem; }
+    .header .navbar-nav .circles:hover::after {
+      width: 70%;
+      height: 10px;
+      transition: all .2s ease-out;
+      margin: 0 auto; }
+    .header .navbar-nav .circles#nav-home::after {
+      background-color: white; }
+    .header .navbar-nav .circles#nav-about::after {
+      background-color: #9a74a2; }
+    .header .navbar-nav .circles#nav-consultas::after {
+      background-color: #fab95b; }
+    .header .navbar-nav .circles#nav-talleres::after {
+      background-color: #ee8886; }
+    .header .navbar-nav .circles#nav-files::after {
+      background-color: #dccb73; }
+    .header .navbar-nav .circles#nav-contacto::after {
+      background-color: #69af5c; } }
   .header .navbar-nav .dropdown-menu {
     background-color: #E1EFDE;
     font-family: "Lato", sans-serif;
