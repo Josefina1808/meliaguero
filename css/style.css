@@ -25,6 +25,10 @@
   * body a {
     text-decoration: none;
     color: currentColor; }
+  * body hr {
+    padding: 1rem 0rem;
+    margin: 0;
+    opacity: 0.5; }
 
 /* NAVBAR */
 .header {
@@ -300,7 +304,7 @@ section {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      height: 80%; }
+      height: 90%; }
     .talleres .talleres__card .talleres__card--img#taller-1 {
       background-image: url(../img/taller-1.jpg); }
     .talleres .talleres__card .talleres__card--img#taller-2 {
@@ -316,6 +320,9 @@ section {
       width: 100%;
       text-align: center;
       font-size: 2rem; }
+    .talleres .talleres__card .talleres__card--link:hover {
+      color: white;
+      background-color: #ee8886; }
 
 /* ARCHIVOS */
 .archivos {
@@ -356,6 +363,10 @@ section {
       width: 100%;
       text-align: center;
       font-size: 2rem; }
+    .archivos .archivos__card .archivos__card--link:hover {
+      color: white;
+      background-color: #dccb73;
+      border: white solid 2px; }
 
 /* CONTACTO */
 .contacto {
